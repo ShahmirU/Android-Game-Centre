@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fall2018.csc207.GameCentre.slidingtiles.SlidingTilesStartingActivity">
+
+
+    <TextView
+        android:id="@+id/Instructions"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="7dp"
+        android:text="Welcome To Sliding Tiles!! \n A Puzzle Game where you must arrange the numbers in the correct order"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/LoadButton"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="373dp"
+        android:text="Load saved game" />
+
+    <Button
+        android:id="@+id/SaveButton"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@+id/LoadButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="156dp"
+        android:text="Save Game" />
+
+    <TextView
+        android:id="@+id/UndoInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="105dp"
+        android:text="How many moves would you like to be able to undo?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/MaxUndos"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/UndoInstructions"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="137dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="3" />
+
+    <TextView
+        android:id="@+id/ComplexityInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/UndoInstructions"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="190dp"
+        android:text="Choose a board size (must be 3, 4 or 5):"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ComplexityInput"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/MaxUndos"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="227dp"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/threeButton"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/SaveButton"
+        android:layout_alignEnd="@+id/ComplexityInstructions"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="newGame"
+        android:text="start new game" />
+
+    <Button
+        android:id="@+id/TilesScoreBoardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/UndoInstructions"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginBottom="7dp"
+        android:text="view scoreboard" />
+
+    <Button
+        android:id="@+id/BackToMenu"
+        android:layout_width="108dp"
+        android:layout_height="59dp"
+        android:layout_alignTop="@+id/TilesScoreBoardButton"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="-4dp"
+        android:layout_toEndOf="@+id/ComplexityInput"
+        android:text="Back to Menu" />
+
+
+    <Button
+        android:id="@+id/AutoloadButton"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/LoadButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="Load Autosaved Game" />
+</RelativeLayout>

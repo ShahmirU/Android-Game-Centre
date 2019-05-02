@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="379dp"
+        android:layout_height="63dp"
+        android:text="Welcome to Perfect Pair!!"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="379dp"
+        android:layout_height="51dp"
+        android:text="A game where you match two pictures and make a pair!"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/startnewbutton"
+        android:layout_width="155dp"
+        android:layout_height="42dp"
+        android:text="Start New Game"
+        app:layout_constraintBottom_toTopOf="@+id/PerfectPairsScoreBoard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionText"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <Button
+        android:id="@+id/loadButton"
+        android:layout_width="104dp"
+        android:layout_height="46dp"
+        android:text="LOAD GAME"
+        app:layout_constraintBottom_toTopOf="@+id/PerfectPairsScoreBoard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startnewbutton" />
+
+    <Button
+        android:id="@+id/PerfectPairsScoreBoard"
+        android:layout_width="117dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="64dp"
+        android:text="SCORE BOARD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startnewbutton" />
+
+</android.support.constraint.ConstraintLayout>

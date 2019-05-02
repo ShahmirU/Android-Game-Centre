@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="fall2018.csc207.GameCentre.tic.TicTacToeStartingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Tic Tac Toe"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tictactoe_scoreboard_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/round"
+        android:onClick="startGame"
+        android:text="start game"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="174dp"
+        android:fontFamily="casual"
+        android:text="Welcome to Tic Tac Toe! Take turns placing symbols, and win when you place 3 in a line! Your symbol is an X and you will play against a CPU whose symbol is an O."
+        android:textAppearance="@style/TextAppearance.L"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="230dp"
+        android:fontFamily="casual"
+        android:text="To get a higher score try and win as many times as possible before ending the game!"
+        android:textAppearance="@style/TextAppearance.L"
+        android:textColor="@color/colorAccent"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/tictactoe_scoreboard_button"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round"
+        android:text="View Scoreboard"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/back_to_menu"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tictactoe_scoreboard_button"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="-51dp"
+        android:layout_toEndOf="@+id/start"
+        android:background="@drawable/round"
+        android:text="Back To Menu"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

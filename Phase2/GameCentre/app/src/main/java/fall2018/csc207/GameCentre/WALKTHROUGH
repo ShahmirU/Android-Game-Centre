@@ -1,0 +1,118 @@
+WALKTHROUGH:
+
+Our unit test coverage is approximately 50~60% for the sliding tiles controller classes. We do not
+run unit tests on activity classes because they do not contain logic which makes them untestable
+unless using Mockito.
+
+The most important classes in our program are Game Activity classes, which are linked with the game
+controller for all three of the games.
+
+StartingActivity and StartingController are particularly important for SlidingTiles, because you
+need to pick the level of complexity, the undos, etc. before creating the game
+
+We also have scoreboard activity and scoreboard controller classes for each of the three games
+as well as the player scoreboard.
+
+Design Patterns:
+
+- Observer - makes unit testing easier, allows us to decouple classes, and helps by notifying other
+classes when changes occur - particularly helpful with notifying other classes of new high scores
+- Iterator - allows us to easily iterate through certain objects of classes, such as tiles on a board
+without having to explicitly define for loops.
+- MVC - allows us to decouple any logic from activity classes and place them in a corresponding
+controller class, as well as follow a model for certain classes.
+- Strategy - generally allowed us to change the code during run time changes, updating scores and
+movement controllers.
+
+Scoreboards:
+To design our player scoreboard we used the list view pattern which allows us to automatically
+print the name of the games in the game centre and the corresponding highest scores for the current
+players. These high scores are saved in a HashMap in the player class, linking the game to the
+highest scores.
+The per game scoreboards display the username of the highest scoring player for that game and their
+corresponding high score. Since we are only displaying the highest scoring player we did not use
+list view since these scoreboards do not have to be extensible.
+
+OUTLINE OF PRESENTATION:
+
+*Kashaf*
+
+Hi! We're group_0624 and today we're really excited to be presenting our Game Centre to you.
+Before we go into the actual presentation, we would to briefly introduce ourselves.
+
+~Introductions by everyone~
+
+Kashaf: Hi I'm Kashaf and I worked on making Tic Tac Toe.
+
+Prianka: Hi I'm Prianka and I worked on making Perfect Pairs.
+
+Shahmir: Hi I'm Shahmir and I worked on Perfect Pairs as well.
+
+Tania: Hi I'm Tania and I worked on making Tic Tac Toe.
+
+Areeba: Hi I'm Areeba and I worked on solvable boards, decoupling, and unittesting.
+
+Ok cool! So today we're going to be demo-ing our game centre. When you first log in, there's going
+to be a page that allows you to sign in or sign up. Right now, I'm going to be signing up a new
+user. username: kash password: kash *make sure u have an email*
+
+Then we reach a page in which we can decide to play a game or go to a scoreboard.
+
+It also provides an option to log out. Firstly, let's look at the scoreboards.
+
+~show scoreboard~
+
+Next, let's pick a game. We'll be doing Tic Tac Toe first.
+
+Kashaf shows the first half of TTT, and then Tania shows the rest...
+
+*Tania*
+
+Shows how you can undo, scoreboard
+
+*Shahmir*
+
+Shows Perfect Pairs
+
+*Prianka*
+
+Shows Perfect Pairs Part 2
+
+*Areeba*
+
+Shows the scoreboard stuff...
+
+*Kashaf*
+
+That's all of the game centre. Now let's go through the code...
+
+*UML DIAGRAM*
+
+*Prianka*
+
+- log-in stuff
+
+*Areeba*
+
+- User Scoreboard
+- how you store and manage the user scores
+
+*Tania*
+
+- Starting Activity
+- Scoreboards for TTT
+
+*Kashaf*
+
+- TTT Game Activity
+
+*Shahmir*
+
+- Perfect Pairs Part 1
+- shows observer pattern
+
+*Prianka*
+
+- unittesting
+
+KASHAF - ENDING

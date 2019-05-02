@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/GameOverText"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="92dp"
+        android:gravity="center"
+        android:text="Game Over!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/orange"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/PerfectPairsScores"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/GameOverText"
+        android:layout_alignEnd="@+id/HighestScore"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginEnd="94dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorAccent"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/HighestScore"
+        android:layout_width="195dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="337dp"
+        android:gravity="center"
+        android:text="Highest Score:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/BackToMenu"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/GameOverText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_marginBottom="65dp"
+        android:backgroundTint="?attr/colorButtonNormal"
+        android:gravity="center"
+        android:text="Back to Menu" />
+
+    <TextView
+        android:id="@+id/HighScore"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/HighestScore"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="41dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="visible" />
+</RelativeLayout>
